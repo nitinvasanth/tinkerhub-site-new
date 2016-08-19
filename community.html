@@ -126,13 +126,11 @@
       background-color: #374B6B;
       z-index: 9999;
       border: 0;
-      font-size: 14px !important;
+      font-size: 12px !important;
       line-height: 1.42857143 !important;
-      letter-spacing: 2px;
+      letter-spacing: 4px;
       border-radius: 0;
-      font-family: 'Open Sans', sans-serif;
-      opacity: 0.9;
-
+      font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
       color: #ECEEEF !important;
@@ -193,12 +191,9 @@
         font-size: 150px;
     }
   }
-
   </style>
 </head>
-
-
-<body id="index" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -208,8 +203,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img href="index.html" style="padding-top: 8px;" src="nav.png" width="10%" height="10%"/>
-
+      <a class="navbar-brand" href="#myPage">TinkerHub</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -229,10 +223,9 @@
         <li><a href="about.html">About</a></li>
         <li><a href="blog.tinkerhub.org">Blog</a></li>
         <li style="padding-top: 9px; padding-left:20px">
-
-            <button id="joinbtn" type="button" class="btn btn-raised btn-warning">
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Join
-            </button>
+          <button type="button" class="btn btn-raised btn-warning">
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span><a href="join.html">Join</a>
+          </button>
         </li>
       </ul>
     </div>
@@ -240,118 +233,73 @@
 </nav>
 
 
+<div class="jumbotron text-center">
+  <h1>The Community</h1>
+  <p>Say hello to our group of like minded tinkerers.</p>
 
-
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" >
-    <div class="item active">
-      <img style="margin: auto;"src="http://tinkerhub.org/img/header.jpg" alt="Chania">
-    </div>
-
-    <div class="item">
-      <img style="margin: auto;" src="http://tinkerhub.org/img/header.jpg" alt="Chania">
-    </div>
-
-    <div class="item">
-      <img style="margin: auto;" src="http://tinkerhub.org/img/header.jpg" alt="Flower">
-    </div>
-
-    <div class="item">
-      <img style="margin: auto;" src="http://tinkerhub.org/img/header.jpg" alt="Flower">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
-
 
 
 <div class="container-fluid bg-grey">
   <div class="row">
-    <div class="col-sm-7">
-      <h2>Welcome to the TinkerHub Foundation</h2><br>
-        <p><strong>Random:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, nisi in fringilla tempus, nibh risus consequat magna, eget imperdiet ipsum justo vel urna. Aenean sit amet ligula nisl. Vestibulum et velit in sem iaculis venenatis. Integer euismod mi magna, nec bibendum purus placerat sed. In efficitur dignissim maximus. Etiam finibus quam enim, eget elementum nisi dapibus in. Donec tincidunt dolor ut est lobortis, id sodales est commodo.
-          In gravida mauris id scelerisque rhoncus. Etiam justo ante, mattis gravida venenatis at, commodo at justo. Fusce commodo ante non libero gravida pharetra. Curabitur eleifend velit ligula, at euismod tellus rutrum at. Sed mattis consequat placerat. Nulla hendrerit lorem sit amet facilisis tempor. Nullam fringilla sapien erat, ac fringilla purus congue quis. Donec nec eros neque.
-          Praesent maximus neque eu sapien porttitor, pretium vestibulum quam dapibus. Quisque ac blandit ante. Etiam sodales eleifend ex eu efficitur. Suspendisse finibus vehicula nibh, sit amet sagittis sem scelerisque non. Suspendisse vestibulum neque in ligula dictum, vitae commodo odio efficitur. Suspendisse id commodo ante. Quisque mi quam, sagittis ut ligula sit amet, ullamcorper suscipit elit. Curabitur in scelerisque orci. </p>
+    <div class="col-sm-4">
+      <h2>Like Minded Tinkerers, Like Minded action</h2><br>
+        <p>Building cool shit </p>
+        &nbsp;
+
 
 
 
 
     </div>
-    <div class="col-sm-5">
-      <h2>Events</h2>
-      <br>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Event</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-          </tr>
-        </tbody>
-      </table>
-      <a href="mailchimpurl" class="btn btn-info btn-lg btn-block btn-raised">Subscribe to the  <i class="fa fa-newspaper-o" aria-hidden="true"></i>
- Newsletter</a>
+    <div class="col-sm-8">
+
+       <img style="width:100%; height:100%;" src="1.jpg" class="img-rounded" alt="tinkerers at play" width="300" height="150" >
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid " >
+  <div class="row" >
+    <div class="col-sm-8" >
+
+       <img style="width:100%; height:100%;" src="1.jpg" class="img-rounded" alt="tinkerers at play" width="300" height="150" >
+    </div>
+    <div class="col-sm-4">
+      <h2>Like Minded Tinkerers, Like Minded action</h2><br>
+        <p>Building cool shit </p>
+        &nbsp;
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Like Minded Tinkerers, Like Minded action</h2><br>
+        <p>Building cool shit </p>
+        &nbsp;
+
+
+
+
+
+    </div>
+    <div class="col-sm-8">
+
+       <img style="width:100%; height:100%;" src="1.jpg" class="img-rounded" alt="tinkerers at play" width="300" height="150" >
     </div>
   </div>
 </div>
 
 
 
-<div class="container-fluid text-center">
-<h3>What our fellow Tinkerers have to say:</h3>
-<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <h4>"Random Random"<br><span style="font-style:normal;">Raghava, MA, MBBS</span></h4>
-    </div>
-    <div class="item">
-      <h4>"Kallaki Browie"<br><span style="font-style:normal;">Pushpalakshan Nair</span></h4>
-    </div>
-    <div class="item">
-      <h4>"YO Yo"<br><span style="font-style:normal;">Dinkan, Local Hero</span></h4>
-    </div>
-  </div>
-</div>
 
 <footer class="container-fluid text-center bg-grey">
   <a href="#myPage" title="To Top">
@@ -374,10 +322,6 @@
 
 <script>
 $(document).ready(function(){
-
-  $("#joinbtn").on("click", function() {
-    window.open("join.html","_self")
-  });
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior

@@ -34,7 +34,7 @@
       margin-bottom: 30px;
   }
   .jumbotron {
-      background-color: #374B6B;
+      background-color: #f4511e;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
@@ -46,11 +46,11 @@
       background-color: #f6f6f6;
   }
   .logo-small {
-      color: #374B6B;
+      color: #f4511e;
       font-size: 50px;
   }
   .logo {
-      color: #374B6B;
+      color: #f4511e;
       font-size: 200px;
   }
   .thumbnail {
@@ -65,13 +65,13 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #374B6B;
+      color: #f4511e;
   }
   .carousel-indicators li {
-      border-color: #374B6B;
+      border-color: #f4511e;
   }
   .carousel-indicators li.active {
-      background-color: #374B6B;
+      background-color: #f4511e;
   }
   .item h4 {
       font-size: 19px;
@@ -84,7 +84,7 @@
       font-style: normal;
   }
   .panel {
-      border: 1px solid #374B6B;
+      border: 1px solid #f4511e;
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -92,13 +92,13 @@
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-      border: 1px solid #374B6B;
+      border: 1px solid #f4511e;
       background-color: #fff !important;
-      color: #374B6B;
+      color: #f4511e;
   }
   .panel-heading {
       color: #fff !important;
-      background-color: #374B6B !important;
+      background-color: #f4511e !important;
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
@@ -118,27 +118,25 @@
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: #374B6B;
+      background-color: #f4511e;
       color: #fff;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #374B6B;
+      background-color: #f4511e;
       z-index: 9999;
       border: 0;
-      font-size: 14px !important;
+      font-size: 12px !important;
       line-height: 1.42857143 !important;
-      letter-spacing: 2px;
+      letter-spacing: 4px;
       border-radius: 0;
-      font-family: 'Open Sans', sans-serif;
-      opacity: 0.9;
-
+      font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #ECEEEF !important;
+      color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #374B6B !important;
+      color: #f4511e !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -148,7 +146,7 @@
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #374B6B;
+      color: #f4511e;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -193,12 +191,9 @@
         font-size: 150px;
     }
   }
-
   </style>
 </head>
-
-
-<body id="index" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -208,11 +203,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img href="index.html" style="padding-top: 8px;" src="nav.png" width="10%" height="10%"/>
-
+      <a class="navbar-brand" href="#myPage">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://tinkerhub.org/">Home</a></li>
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="engage.html">Engage
         <span class="caret"></span></a>
@@ -228,20 +223,26 @@
         <li><a href="events.html">Events</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.tinkerhub.org">Blog</a></li>
-        <li style="padding-top: 9px; padding-left:20px">
-
-            <button id="joinbtn" type="button" class="btn btn-raised btn-warning">
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Join
-            </button>
+        <li>
+          <button style="padding-top: 14px;" type="button" class="btn btn-primary">
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span><a href="join.html">Join</a>
+          </button>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-
-
-
+<!--
+<div class="jumbotron text-center">
+  <h1>Company</h1>
+  <p>We specialize in blablabla</p>
+  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+    <button type="button" class="btn btn-danger">Subscribe</button>
+  </form>
+</div>
+-->
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -253,21 +254,21 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" >
+  <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img style="margin: auto;"src="http://tinkerhub.org/img/header.jpg" alt="Chania">
+      <img src="http://www.hotel-r.net/im/hotel/fr/hello-1.jpg" alt="Chania">
     </div>
 
     <div class="item">
-      <img style="margin: auto;" src="http://tinkerhub.org/img/header.jpg" alt="Chania">
+      <img src="http://www.hotel-r.net/im/hotel/fr/hello-1.jpg" alt="Chania">
     </div>
 
     <div class="item">
-      <img style="margin: auto;" src="http://tinkerhub.org/img/header.jpg" alt="Flower">
+      <img src="http://www.hotel-r.net/im/hotel/fr/hello-1.jpg" alt="Flower">
     </div>
 
     <div class="item">
-      <img style="margin: auto;" src="http://tinkerhub.org/img/header.jpg" alt="Flower">
+      <img src="http://www.hotel-r.net/im/hotel/fr/hello-1.jpg" alt="Flower">
     </div>
   </div>
 
@@ -288,6 +289,9 @@
   <div class="row">
     <div class="col-sm-7">
       <h2>Welcome to the TinkerHub Foundation</h2><br>
+        <h4><strong>Random:</strong>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, nisi in fringilla tempus, nibh risus consequat magna, eget imperdiet ipsum justo vel urna. Aenean sit amet ligula nisl. Vestibulum et velit in sem iaculis venenatis. Integer euismod mi magna, nec bibendum purus placerat sed. In efficitur dignissim maximus. Etiam finibus quam enim, eget elementum nisi dapibus in. Donec tincidunt dolor ut est lobortis, id sodales est commodo.
+          In gravida mauris id scelerisque rhoncus. Etiam justo ante, mattis gravida venenatis at, commodo at justo. Fusce commodo ante non libero gravida pharetra. Curabitur eleifend velit ligula, at euismod tellus rutrum at. Sed mattis consequat placerat. Nulla hendrerit lorem sit amet facilisis tempor. Nullam fringilla sapien erat, ac fringilla purus congue quis. Donec nec eros neque.
+          Praesent maximus neque eu sapien porttitor, pretium vestibulum quam dapibus. Quisque ac blandit ante. Etiam sodales eleifend ex eu efficitur. Suspendisse finibus vehicula nibh, sit amet sagittis sem scelerisque non. Suspendisse vestibulum neque in ligula dictum, vitae commodo odio efficitur. Suspendisse id commodo ante. Quisque mi quam, sagittis ut ligula sit amet, ullamcorper suscipit elit. Curabitur in scelerisque orci. </h4><br>
         <p><strong>Random:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, nisi in fringilla tempus, nibh risus consequat magna, eget imperdiet ipsum justo vel urna. Aenean sit amet ligula nisl. Vestibulum et velit in sem iaculis venenatis. Integer euismod mi magna, nec bibendum purus placerat sed. In efficitur dignissim maximus. Etiam finibus quam enim, eget elementum nisi dapibus in. Donec tincidunt dolor ut est lobortis, id sodales est commodo.
           In gravida mauris id scelerisque rhoncus. Etiam justo ante, mattis gravida venenatis at, commodo at justo. Fusce commodo ante non libero gravida pharetra. Curabitur eleifend velit ligula, at euismod tellus rutrum at. Sed mattis consequat placerat. Nulla hendrerit lorem sit amet facilisis tempor. Nullam fringilla sapien erat, ac fringilla purus congue quis. Donec nec eros neque.
           Praesent maximus neque eu sapien porttitor, pretium vestibulum quam dapibus. Quisque ac blandit ante. Etiam sodales eleifend ex eu efficitur. Suspendisse finibus vehicula nibh, sit amet sagittis sem scelerisque non. Suspendisse vestibulum neque in ligula dictum, vitae commodo odio efficitur. Suspendisse id commodo ante. Quisque mi quam, sagittis ut ligula sit amet, ullamcorper suscipit elit. Curabitur in scelerisque orci. </p>
@@ -297,37 +301,9 @@
 
     </div>
     <div class="col-sm-5">
-      <h2>Events</h2>
-      <br>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Event</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-          </tr>
-        </tbody>
-      </table>
-      <a href="mailchimpurl" class="btn btn-info btn-lg btn-block btn-raised">Subscribe to the  <i class="fa fa-newspaper-o" aria-hidden="true"></i>
- Newsletter</a>
     </div>
   </div>
 </div>
-
-
 
 <div class="container-fluid text-center">
 <h3>What our fellow Tinkerers have to say:</h3>
@@ -365,19 +341,11 @@
     <span class="fa fa-github"></span>
     &nbsp;
     <span class="fa fa-instagram"></span>
-    &nbsp;
-    <span class="fa fa-newspaper-o"></span>
-    &nbsp;
-    <span class="fa fa-slack"></span>
   <p>Made with  <i class="fa fa-heart" aria-hidden="true"></i>  at TinkerHub</p>
 </footer>
 
 <script>
 $(document).ready(function(){
-
-  $("#joinbtn").on("click", function() {
-    window.open("join.html","_self")
-  });
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
